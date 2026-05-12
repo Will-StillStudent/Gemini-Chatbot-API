@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Travel Assistant</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div id="chat-header" style="padding: 10px 15px; border-radius: 12px 12px 0 0; background-color: #075e54; color: white; display: flex; align-items: center; gap: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+      <div id="toggle-container">
+        <button id="dark-mode-toggle" style="background: rgba(255,255,255,0.2); color: white; border: none; width: 35px; height: 35px; border-radius: 50%; cursor: pointer; font-size: 16px;">🌙</button>
+      </div>
+      <h1 style="font-size: 18px; margin: 0; flex-grow: 1;">Your Travel Assistant</h1>
+    </div>
+    <div id="chat-box" class="chat-box"></div>
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" required />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
